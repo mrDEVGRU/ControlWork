@@ -14,16 +14,7 @@
     return size;
 }
 
-
-void PrintArray(string[] array)
-{
-    Console.Write("[");
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write($"{array[i]},");
-    }
-    Console.Write("]");
-}
+void PrintArray(string[] array) => Console.WriteLine($"[{string.Join("“,“", array)}]");
 
 int size = 0;
 string[] array = new string[] { "Hello", "2", "world", ":-)" };
